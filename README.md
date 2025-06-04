@@ -10,7 +10,7 @@ A Generalized Variational Quantum Circuit Framework for Efficient Amplitude-Base
 ## 🚀 Overview  
 **Revolutionary Quantum State Preparation Framework for the NISQ Era**
 
-This repository presents the **Universal Dataset Encoder (UDE)**, a novel variational quantum circuit (VQC) framework that addresses one of quantum computing’s most critical bottlenecks: efficient and scalable quantum state preparation. Unlike traditional methods that are single-state and dataset-specific, the UDE provides a universal, black-box circuit architecture that can encode **entire dataset matrices into quantum states simultaneously**.
+This repository presents the **Universal Dataset Encoder (UDE)**, a novel variational quantum circuit (VQC) framework that addresses one of quantum computing’s most critical bottlenecks: efficient and scalable quantum state preparation. Unlike traditional methods that are single-state and dataset-specific, the UDE provides a universal, black-box circuit architecture that can encode **entire dataset matrices into quantum states simultaneously**. This work was conducted as part of a Bachelor's thesis at BITS Pilani, Goa Campus, carried out under supervision of Prof. Debajyoti Bera at IIIT Delhi.
 
 ---
 

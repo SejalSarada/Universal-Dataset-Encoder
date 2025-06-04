@@ -91,12 +91,12 @@ Optimize:
 ## 📁 Repository Structure
 
 universal-dataset-encoder/
-├── README.md
-├── thesis-report/
-│ └── UDE_ThesisReport.pdf
-└── implementations/
-├── single_state_preparation.py
-└── multi_state_preparation.py
+├── README.md <br />
+├── thesis-report/ <br />
+│ └── UDE_ThesisReport.pdf <br />
+└── implementations/ <br />
+├── single_state_preparation.py <br />
+└── multi_state_preparation.py <br />
 
 ---
 
@@ -126,7 +126,7 @@ This work addresses three major limitations in current literature:
 
 ### Quick Start  
 
-``python
+``python <br />
 Example: Single-State Encoding
 from implementations.single_state_preparation import UniversalEncoder
 encoder = UniversalEncoder(n_qubits=3, depth=2)
@@ -174,7 +174,7 @@ fidelity = encoder.evaluate_fidelity(target_state, quantum_state)
 
 If you use this work in your research, please cite:
 
-``bibtex
+``bibtex <br />
 @thesis{sarada2024universal,
   title={Universal Dataset Encoder: A Generalized VQC Approach to Approximate Encoding},
   author={Sarada, Sejal},

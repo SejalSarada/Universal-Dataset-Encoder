@@ -1,5 +1,5 @@
 # Universal-Dataset-Encoder
-A Generalized Variational Quantum Circuit Framework for Efficient Amplitude-Based Quantum State Preparation
+A Generalized Variational Quantum Circuit Framework for Efficient Amplitude-Based Quantum State Preparation for QML
 
 > **Author**: Sejal Sarada  
 > **Advisors**: Dr. Debajyoti Bera (IIIT-Delhi), Dr. Kunal Korgaonkar (BITS Pilani Goa Campus)  

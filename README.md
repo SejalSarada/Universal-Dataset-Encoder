@@ -76,21 +76,21 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 ### Mathematical Framework  
 
 **Single-State Objective:**  
-Prepare a target state  
-  \|data⟩ = Σ_j d_j \|j⟩  
-Optimize:  
-  L(θ) = 1 - |⟨data|U(θ)|0⟩|²  
+- Prepare a target state  
+    - |data⟩ = Σ_j d_j \|j⟩  
+- Optimize:  
+    - L(θ) = 1 - |⟨data|U(θ)|0⟩|²  
 
 **Multi-State Objective:**  
-Prepare G states from dataset {d₁, ..., d_G} using ancilla index g  
-Optimize:  
-  L(θ) = Σ_g α_g(1 - |⟨d_g|VU(θ)|g⟩|²)
+- Prepare G states from dataset {d₁, ..., d_G} using ancilla index g  
+- Optimize:  
+    - L(θ) = Σ_g α_g(1 - |⟨d_g|VU(θ)|g⟩|²)
 
 ---
 
 ## 📁 Repository Structure
 
-universal-dataset-encoder/
+universal-dataset-encoder/ <br />
 ├── README.md <br />
 ├── thesis-report/ <br />
 │ └── UDE_ThesisReport.pdf <br />
@@ -126,12 +126,12 @@ This work addresses three major limitations in current literature:
 
 ### Quick Start  
 
-``python <br />
-Example: Single-State Encoding
-from implementations.single_state_preparation import UniversalEncoder
-encoder = UniversalEncoder(n_qubits=3, depth=2)
-quantum_state = encoder.encode(classical_data)
-fidelity = encoder.evaluate_fidelity(target_state, quantum_state)
+python <br />
+Example: Single-State Encoding <br />
+from implementations.single_state_preparation import UniversalEncoder <br />
+encoder = UniversalEncoder(n_qubits=3, depth=2) <br />
+quantum_state = encoder.encode(classical_data) <br />
+fidelity = encoder.evaluate_fidelity(target_state, quantum_state) <br />
 
 ---
 
@@ -174,26 +174,26 @@ fidelity = encoder.evaluate_fidelity(target_state, quantum_state)
 
 If you use this work in your research, please cite:
 
-``bibtex <br />
-@thesis{sarada2024universal,
-  title={Universal Dataset Encoder: A Generalized VQC Approach to Approximate Encoding},
-  author={Sarada, Sejal},
-  year={2024},
-  school={BITS Pilani, Goa Campus},
-  supervisor={Bera, Debajyoti and Korgaonkar, Kunal},
-  type={Bachelor's Thesis}
+bibtex <br />
+@thesis{sarada2024universal, <br />
+&nbsp; title={Universal Dataset Encoder: A Generalized VQC Approach to Approximate Encoding}, <br />
+&nbsp;author={Sarada, Sejal}, <br />
+&nbsp;year={2024}, <br />
+&nbsp;school={BITS Pilani, Goa Campus}, <br />
+&nbsp;supervisor={Bera, Debajyoti and Korgaonkar, Kunal},<br />
+&nbsp;type={Bachelor's Thesis}<br />
 }
 
---
+---
 
 ## 👥 Contributors
 
 ### Research & Development  
-- **Sejal Sarada** — BITS Pilani, Goa Campus
+- **Sejal Sarada** — BITS Pilani, Goa Campus ; [email: sejalsarada13@gmail.com]
 
 ### Supervision  
-- **Dr. Debajyoti Bera** — Associate Professor, IIIT Delhi  
-- **Dr. Kunal Korgaonkar** — Assistant Professor, BITS Pilani Goa Campus
+- **Dr. Debajyoti Bera** — Associate Professor, IIIT Delhi ; [email: dbera@iiitd.ac.in]
+- **Dr. Kunal Korgaonkar** — Assistant Professor, BITS Pilani Goa Campus ; [email: kunalk@goa.bits-pilani.ac.in]
 
 ---
 

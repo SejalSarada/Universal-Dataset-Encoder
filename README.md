@@ -57,8 +57,10 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 | Configuration | # States | Avg. Fidelity | Circuit Depth |
 |---------------|----------|----------------|----------------|
 | 2-Qubit       | 4        | 0.89           | Shallow        |
-| 3-Qubit       | 9        | 0.87           | Moderate       |
-| 2-Qubit       | 6        | >0.85          | Minimal        |
+| 3-Qubit       | 9        | 0.87           | Shallow        |
+| 3-Qubit       | 6        | >0.85          | Minimal        |
+| 8-Qubit       | 256      | 0.796          | Moderate       |
+| 16-Qubit      | 62000    | 0.786          | Moderate       |
 
 ---
 
@@ -75,14 +77,14 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 
 **Single-State Objective:**  
 Prepare a target state  
-\|data⟩ = Σ_j d_j \|j⟩  
+  \|data⟩ = Σ_j d_j \|j⟩  
 Optimize:  
-L(θ) = 1 - |⟨data|U(θ)|0⟩|²  
+  L(θ) = 1 - |⟨data|U(θ)|0⟩|²  
 
 **Multi-State Objective:**  
 Prepare G states from dataset {d₁, ..., d_G} using ancilla index g  
 Optimize:  
-L(θ) = Σ_g α_g(1 - |⟨d_g|VU(θ)|g⟩|²)
+  L(θ) = Σ_g α_g(1 - |⟨d_g|VU(θ)|g⟩|²)
 
 ---
 
@@ -91,14 +93,10 @@ L(θ) = Σ_g α_g(1 - |⟨d_g|VU(θ)|g⟩|²)
 universal-dataset-encoder/
 ├── README.md
 ├── thesis-report/
-│ └── EndsemThesisReport.pdf
+│ └── UDE_ThesisReport.pdf
 └── implementations/
 ├── single_state_preparation.py
 └── multi_state_preparation.py
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -128,10 +126,9 @@ This work addresses three major limitations in current literature:
 
 ### Quick Start  
 
-python
-# Example: Single-State Encoding
+``python
+Example: Single-State Encoding
 from implementations.single_state_preparation import UniversalEncoder
-
 encoder = UniversalEncoder(n_qubits=3, depth=2)
 quantum_state = encoder.encode(classical_data)
 fidelity = encoder.evaluate_fidelity(target_state, quantum_state)
@@ -211,4 +208,4 @@ For inquiries or collaboration opportunities:
 ---
 
 > ⚡ **Accelerating Quantum Computing Through Universal State Preparation** ⚡  
-> _This work represents a fundamental advancement in quantum state preparation, providing the foundation for more efficient and scalable quantum algorithms in the NISQ era and beyond.
+> This work represents a fundamental advancement in quantum state preparation, providing the foundation for more efficient and scalable quantum algorithms in the NISQ era and beyond.

@@ -7,14 +7,14 @@ A Generalized Variational Quantum Circuit Framework for Efficient Amplitude-Base
 
 ---
 
-## 🚀 Overview  
+## Overview  
 **Revolutionary Quantum State Preparation Framework for the NISQ Era**
 
 This repository presents the **Universal Dataset Encoder (UDE)**, a novel variational quantum circuit (VQC) framework that addresses one of quantum computing’s most critical bottlenecks: efficient and scalable quantum state preparation. Unlike traditional methods that are single-state and dataset-specific, the UDE provides a universal, black-box circuit architecture that can encode **entire dataset matrices into quantum states simultaneously**. This work was conducted as part of a Bachelor's thesis at BITS Pilani, Goa Campus, carried out under supervision of Prof. Debajyoti Bera at IIIT Delhi.
 
 ---
 
-## 🎯 Key Innovation
+## Key Innovation
 
 - **Universal Encoding**: A single trainable circuit architecture generalizable to any classical dataset  
 - **Multi-State Capability**: Simultaneous preparation of multiple quantum states using ancilla-driven branching  
@@ -23,7 +23,7 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 
 ---
 
-## 🔬 Research Contributions
+## Research Contributions
 
 ### 1. Hardware-Efficient Circuit Design  
 - Shallow-depth VQC with linear scalability  
@@ -45,7 +45,8 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 
 ---
 
-## 📊 Experimental Validation
+## Experimental Validation
+The following have been plotted, displayed and elaborated on in the report UDE_ThesisReport.pdf
 
 ### Single-State Preparation  
 - **Perfect Fidelity** (1.0) for 2-qubit and 3-qubit single state encodings  
@@ -64,7 +65,7 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Circuit Components  
 - **Hadamard Layer**: Initializes equal superposition  
@@ -88,7 +89,7 @@ This repository presents the **Universal Dataset Encoder (UDE)**, a novel variat
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 universal-dataset-encoder/ <br />
 ├── README.md <br />
@@ -100,7 +101,7 @@ universal-dataset-encoder/ <br />
 
 ---
 
-## 🎓 Academic Impact
+## Academic Impact
 
 ### Research Significance  
 This work addresses three major limitations in current literature:  
@@ -116,7 +117,7 @@ This work addresses three major limitations in current literature:
 
 ---
 
-## 🔧 Implementation Details
+## Implementation Details
 
 ### Requirements  
 - Python ≥ 3.8  
@@ -135,7 +136,7 @@ fidelity = encoder.evaluate_fidelity(target_state, quantum_state) <br />
 
 ---
 
-## 📈 Performance Benchmarks
+## Performance Benchmarks
 
 ### Computational Metrics
 
@@ -156,7 +157,7 @@ fidelity = encoder.evaluate_fidelity(target_state, quantum_state) <br />
 
 ---
 
-## 🔮 Future Research Directions
+## Future Research Directions
 
 ### Immediate Extensions
 - **Hardware Validation**: Deploy the circuit on real quantum devices with noise mitigation techniques  
@@ -170,7 +171,7 @@ fidelity = encoder.evaluate_fidelity(target_state, quantum_state) <br />
 
 ---
 
-## 📚 Citation
+## Citation
 
 If you use this work in your research, please cite:
 
@@ -186,7 +187,7 @@ bibtex <br />
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 ### Research & Development  
 - **Sejal Sarada** — BITS Pilani, Goa Campus ; [email: sejalsarada13@gmail.com]
@@ -197,7 +198,7 @@ bibtex <br />
 
 ---
 
-## 📧 Contact
+## Contact
 
 For inquiries or collaboration opportunities:
 
@@ -207,5 +208,5 @@ For inquiries or collaboration opportunities:
 
 ---
 
-> ⚡ **Accelerating Quantum Computing Through Universal State Preparation** ⚡  
+> **Accelerating Quantum Computing Through Universal State Preparation** ⚡  
 > This work represents a fundamental advancement in quantum state preparation, providing the foundation for more efficient and scalable quantum algorithms in the NISQ era and beyond.
